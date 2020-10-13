@@ -1,5 +1,7 @@
 package com.example.lrasample;
 
+import io.narayana.lra.filter.FilterRegistration;
+
 import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -22,6 +24,7 @@ public class LrasampleRestApplication extends Application {
         classes.add(HelloController.class);
         classes.add(HogeController.class);
         classes.add(PiyoController.class);
+        //classes.add(FilterRegistration.class);
 
         return classes;
     }
